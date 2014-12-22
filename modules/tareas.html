@@ -1,0 +1,260 @@
+<div id="envolver">
+		<div id='imprimir1'>
+			<h1>Sistemas programables</h1>
+		</div>
+
+		<table class="table table-hover" id="tabla" ng-show="existe('Sistemas programables')">
+			<thead>
+				<th>Tarea</th>
+				<th></th>
+			</thead>
+			
+			<tbody >
+
+				<tr ng-repeat="tarea in tareas | filter: {materia: 'Sistemas programables'}">
+					<td>{{tarea.tarea }}</td>
+					<td>
+						<button type="button" class="btn btn-default pull-right" data-toggle="modal" ng-click="eliminar(tarea)">
+						  <span class="glyphicon glyphicon-trash"></span>
+						</button>
+
+						<button type="button" class="btn btn-default pull-right" data-toggle="modal" data-target="#Editar" ng-click="setEditar(tarea)">
+						  <span class="glyphicon glyphicon-edit"></span>
+						</button>
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+
+
+		<div id='imprimir2'>
+			<h1>Metodologia de desarrollo de software seguro</h1>
+		</div>
+
+		<table class="table table-hover" id="tabla"  ng-show="existe('Metodologia de desarrollo de software')">
+			<thead>
+				<th>Tarea</th>
+				<th></th>
+			</thead>
+			
+			<tbody>
+
+				<tr ng-repeat="tarea in tareas | filter: {materia: 'Metodologia de desarrollo de software'}">
+					<td>{{tarea.tarea}}</td>
+					<td>
+						<button type="button" class="btn btn-default pull-right" data-toggle="modal" ng-click="eliminar(tarea)">
+						  <span class="glyphicon glyphicon-trash"></span>
+						</button>
+
+						<button type="button" class="btn btn-default pull-right" data-toggle="modal" data-target="#Editar" ng-click="setEditar(tarea)">
+						  <span class="glyphicon glyphicon-edit"></span>
+						</button>
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+
+
+		<div id='imprimir3'>
+			<h1>Gestion de proyectos de software</h1>
+		</div>
+
+		<table class="table table-hover" id="tabla"  ng-show="existe('Gestion de proyectos de software')">
+			<thead>
+				<th>Tarea</th>
+				<th></th>
+			</thead>
+			
+			<tbody>
+
+				<tr ng-repeat="tarea in tareas | filter: {materia: 'Gestion de proyectos de software'}">
+					<td>{{tarea.tarea}}</td>
+					<td>
+						<button type="button" class="btn btn-default pull-right" data-toggle="modal" ng-click="eliminar(tarea)">
+						  <span class="glyphicon glyphicon-trash"></span>
+						</button>
+
+						<button type="button" class="btn btn-default pull-right" data-toggle="modal" data-target="#Editar" ng-click="setEditar(tarea)">
+						  <span class="glyphicon glyphicon-edit"></span>
+						</button>
+					</td>
+				</tr>
+	
+			</tbody>
+		</table>
+
+		<div id='imprimir4'>
+			<h1>Redes</h1>
+		</div>
+
+		<table class="table table-hover" id="tabla"  ng-show="existe('Redes')">
+			<thead>
+				<th>Tarea</th>
+				<th></th>
+			</thead>
+			
+			<tbody>
+
+				<tr ng-repeat="tarea in tareas | filter: {materia: 'Redes'}">
+					<td>{{tarea.tarea}}</td>
+					<td>
+						<button type="button" class="btn btn-default pull-right" data-toggle="modal" ng-click="eliminar(tarea)">
+						  <span class="glyphicon glyphicon-trash"></span>
+						</button>
+
+						<button type="button" class="btn btn-default pull-right" data-toggle="modal" data-target="#Editar" ng-click="setEditar(tarea)">
+						  <span class="glyphicon glyphicon-edit"></span>
+						</button>
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+
+		
+		<div id='imprimir5'>
+			<h1>Lenguajes y automatas II</h1>
+		</div>
+
+		<table class="table table-hover" id="tabla"  ng-show="existe('Lenguajes y automatas II')">
+			<thead>
+				<th>Tarea</th>
+				<th></th>
+			</thead>
+			
+			<tbody>
+
+				<tr ng-repeat="tarea in tareas | filter: {materia: 'Lenguajes y automatas II'}">
+					<td>{{tarea.tarea}}</td>
+					<td>
+						<button type="button" class="btn btn-default pull-right" data-toggle="modal" ng-click="eliminar(tarea)">
+						  <span class="glyphicon glyphicon-trash"></span>
+						</button>
+
+						<button type="button" class="btn btn-default pull-right" data-toggle="modal" data-target="#Editar" ng-click="setEditar(tarea)">
+						  <span class="glyphicon glyphicon-edit"></span>
+						</button>
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+
+		<div id='imprimir6'>
+			<h1>Titulacion</h1>
+		</div>
+
+		<table class="table table-hover" id="tabla"  ng-show="existe('Titulacion')">
+			<thead>
+				<th>Tarea</th>
+				<th></th>
+			</thead>
+			
+			<tbody>
+
+				<tr ng-repeat="tarea in tareas | filter: {materia: 'Titulacion'}">
+					<td>{{tarea.tarea}}</td>
+					<td>
+						<button type="button" class="btn btn-default pull-right" data-toggle="modal" ng-click="eliminar(tarea)">
+						  <span class="glyphicon glyphicon-trash"></span>
+						</button>
+
+						<button type="button" class="btn btn-default pull-right" data-toggle="modal" data-target="#Editar" ng-click="setEditar(tarea)">
+						  <span class="glyphicon glyphicon-edit"></span>
+						</button>
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+
+		<div class="boton-envolver">
+			<input type="button" value="Agregar Tarea" class="sign-up-button" id="enviar" data-toggle="modal" data-target="#Agregar">
+		</div>
+</div>
+
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="Agregar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" >
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-book" style="margin-right:8px;"></i>Agregar una tarea</h4>
+	      </div>
+	      <div class="modal-body">
+
+			<form class="form-horizontal" role="form" name="tareasForm" ng-submit="submitForm(tareasForm.$valid)" novalidate>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Tarea: </label>
+					<div class="col-sm-10">
+				      <textarea class="form-control" rows="3" id="textoTarea" name="texto" ng-model="textoTarea" required></textarea>
+				    </div>
+				</div>
+
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Materia: </label>
+					<div class="col-sm-10" >
+				      <select class="form-control" id="materiaTarea" name="materiaT" ng-model="materiaTarea" required>
+				      	  <option disabled selected>Materia</option>
+						  <option>Sistemas programables</option>
+						  <option>Metodologia de desarrollo de software</option>
+						  <option>Gestion de proyectos de software</option>
+						  <option>Redes</option>
+						  <option>Lenguajes y automatas II</option>
+						  <option>Titulacion</option>
+						</select>
+				    </div>
+				</div>
+			
+
+
+
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+			        <button type="submit" class="btn btn-primary" id="agregarTarea" ng-disabled="tareasForm.$invalid">Agregar tarea</button>
+			      </div>
+	        </form>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+
+
+
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="Editar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" >
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-pencil-square-o" style="margin-right:8px;"></i>Editar una tarea</h4>
+	      </div>
+	      <div class="modal-body">
+
+			<form class="form-horizontal" role="form" name="editarForm" ng-submit="EditForm(editarForm.$valid)" novalidate>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Tarea: </label>
+					<div class="col-sm-10">
+				      <textarea class="form-control" rows="3" id="textoTarea" name="texto" ng-model="textoEditar" required></textarea>
+				    </div>
+				</div>
+
+
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+			        <button type="submit" class="btn btn-primary" id="agregarTarea" ng-disabled="editarForm.$invalid">Editar Tarea</button>
+			      </div>
+	        </form>
+	      </div>
+	    </div>
+	  </div>
+	</div>

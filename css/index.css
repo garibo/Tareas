@@ -1,0 +1,245 @@
+::selection
+{
+	background-color: #b3d4fc;
+	text-shadow: none;
+	color: #fff;
+}
+
+@font-face 
+{
+  font-family: 'open';
+  src: url('../fonts/OpenSans-Light.ttf');
+}
+
+#envolver
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	height: auto;
+	position: relative;
+	padding: 33px 25px 29px;
+	border-bottom: 1px solid #c4c4c4;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+td, th, button
+{
+	font-size: medium;
+}
+
+
+#envolver:before, #envolver:after 
+{
+	content: ' ';
+	position: absolute;
+	bottom: 1px;
+	left: 0;
+	right: 0;
+	height: 10px;
+	background: inherit;
+	border-bottom: 1px solid #d2d2d2;
+	border-radius: 4px;
+}
+
+#envolver:after 
+{
+	bottom: 3px;
+	border-color: #dcdcdc;
+}
+
+body
+	{
+	
+	}
+
+#tabla
+{
+}
+
+h1
+{
+	margin: 0;
+	font-family: 'open';
+	font-size: 4em;
+	color: #aaa;
+	text-align: center;
+	text-shadow: 0px 1px rgba(255, 255, 255, 0.75);
+}
+
+#imprimir1
+{
+	height: auto;
+	background-color: #daf1ff;
+	margin-bottom: 20px;
+	border-radius: 8px;
+	border-bottom: 5px solid #bce6ff;
+	word-break:keep-all;
+}
+
+div#imprimir1 h1
+{
+	color: #4bf;
+	font-size: 2.5em;
+}
+
+#imprimir2
+{
+	margin-top: 40px;
+	margin-top: 8px;
+	height: auto;
+	background-color: #fdebf3;
+	margin-bottom: 20px;
+	border-radius: 8px;
+	border-bottom: 5px solid #eddbe3;
+	word-break:keep-all;
+}
+
+div#imprimir2 h1
+{
+	color: #f49ac1;
+	font-size: 2.5em;
+}
+
+
+#imprimir3
+{
+	margin-top: 40px;
+	margin-top: 8px;
+	height: auto;
+	background-color: #fdf0d5;
+	margin-bottom: 20px;
+	border-radius: 8px;
+	border-bottom: 5px solid #fce4b3;
+	word-break:keep-all;
+}
+
+div#imprimir3 h1
+{
+	color: #f7b42c;
+	font-size: 2.5em;
+}
+
+
+#imprimir4
+{
+	margin-top: 40px;
+	margin-top: 8px;
+	height: auto;
+	background-color: #e9f7fb;
+	margin-bottom: 20px;
+	border-radius: 8px;
+	border-bottom: 5px solid #d7f0f8;
+	word-break:keep-all;
+}
+
+div#imprimir4 h1
+{
+	color: #90d5ec;
+	font-size: 2.5em;
+}
+
+#imprimir5
+{
+	margin-top: 40px;
+	margin-top: 8px;
+	height: auto;
+	background-color: #ebeef1;
+	margin-bottom: 20px;
+	border-radius: 8px;
+	border-bottom: 5px solid #dbe0e6;
+	word-break:keep-all;
+}
+
+div#imprimir5 h1
+{
+	color: #9ab;
+	font-size: 2.5em;
+}
+
+
+#imprimir6
+{
+	margin-top: 40px;
+	margin-top: 8px;
+	height: auto;
+	background-color: #eef6dc;
+	margin-bottom: 20px;
+	border-radius: 8px;
+	border-bottom: 5px solid #e0efc0;
+}
+
+div#imprimir6 h1
+{
+	color: #aad450;
+	font-size: 2.5em;
+}	
+
+h1
+{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.sign-up-button
+{
+  position: relative;
+  vertical-align: top;
+  width: 30%;
+  height: 54px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #f0776c;
+  border: 0;
+  border-bottom: 2px solid #d76b60;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #d76b60;
+  box-shadow: inset 0 -2px #d76b60;
+}
+
+.sign-up-button:active 
+{
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.boton-envolver
+{
+	  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#header
+{
+	padding-top: 8px;
+	padding-right: 10px;
+	width: 100%;
+	height: 60px;
+	background-color: #f6f6f6;
+	border-bottom: 3px solid #ddd;
+}
+
+#header ul li a
+{
+	color: #A69F9F;
+	font-size: 1.2em;
+	vertical-align: middle;
+}
+
+
+#tabla tbody tr td button
+{
+	margin-left:4px; 
+	padding: 3px 12px;
+	vertical-align: middle;
+}

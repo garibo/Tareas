@@ -1,0 +1,72 @@
+h1
+{
+	margin: 0;
+	font-family: 'Open Sans';
+	font-size: 4em;
+	color: #aaa;
+	text-align: center;
+	text-shadow: 0px 1px rgba(255, 255, 255, 0.75);
+}
+
+table
+{
+	margin: 0 auto;
+	margin-top: 80px;
+	border: 7px solid #2d3538;
+	border-collapse: collapse;
+	margin-bottom: 100px;
+	-webkit-animation-name:bounceInLeft;
+	-webkit-animation-duration:1s;
+}
+
+td
+{
+	border: 2px solid #ddd;
+	font-family: Arial;
+	font-size: 1.3em;
+	color: #444;
+}
+
+
+@media screen and (max-width:900px){
+table
+{
+	background-color: #e5eff8
+}
+
+table, thead, tr, th, tbody, td
+{
+		display:list-item;
+}
+	
+thead tr 
+{
+	display: none;
+}
+	
+td
+{ 
+	border: none;
+	border-bottom: 1px solid #ddd; 
+	position: relative;
+	padding-left: 50%; 
+}
+
+td:before
+{ 
+	position: absolute;	
+	top: 6px;
+	left: 6px;
+	width: 45%; 
+	padding-right: 10px; 
+	white-space: nowrap;
+}
+	
+td:nth-of-type(1):before { content: "Materia"; }
+td:nth-of-type(2):before { content: "Lunes"; }
+td:nth-of-type(3):before { content: "Martes"; }
+td:nth-of-type(4):before { content: "Miercoles"; }
+td:nth-of-type(5):before { content: "Jueves"; }
+td:nth-of-type(6):before { content: "Viernes"; }
+
+}
